@@ -15,6 +15,6 @@ if ($check_format['error']) {
 if (isset($error)) {
 	print $error;
 } else {
-	output_data($format);
+	output_data($format, $_GET);
 }
 ?>

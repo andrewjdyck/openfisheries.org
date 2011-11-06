@@ -140,8 +140,8 @@ function create_query($apiParams) {
 	return $query;
 }
 
-function output_data($format, $_GET) {
-	$apiParams = $_GET;
+function output_data($format, $get) {
+	$apiParams = $get;
 	unset($apiParams['api_key']);
 	unset($apiParams['format']);
 	if ($format == 'json') {
