@@ -5,9 +5,7 @@ include "../functions.php";
 
 // checking output formats and API keys
 $check_format = checkOutputFormat($_GET['format']);
-if (!check_api($_GET['api_key'], Array('carl2011'))) {
-	$error = '[{"error":"Incorrect API key"}]';
-} elseif ($check_format['error']) {
+if ($check_format['error']) {
 	$error = '[{"error":"Incorrect output format"}]';
 } else {
 	$format = $check_format['format'];
