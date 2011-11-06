@@ -94,8 +94,7 @@ function getTimeSeries($query) {
 
 
 // checks an api key
-function check_api($key) {
-	$api_keys = Array('andrew1243', 'carl2011');
+function check_api($key, $api_keys) {
 	if (!empty($key) && in_array($key, $api_keys)) {
 		$result = TRUE;
 	} else {
