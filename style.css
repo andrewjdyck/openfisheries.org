@@ -36,6 +36,19 @@ p.float-right {
     text-align: right;
 }
 
+#head-menu li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+}
+
+#head-menu {
+	margin-top: -60px;
+	text-align: right;
+	text-size: 11pt;
+}
+
+
 h3 {
     margin-bottom: 5px;
     font-size: 12pt;
