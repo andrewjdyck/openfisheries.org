@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html>
 <head>
 <title>OpenFisheries.org</title>

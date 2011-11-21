@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html>
 <head>
 <title>OpenFisheries.org</title>
@@ -31,14 +34,14 @@ The Advanced Programming Interface (API) is experimental, but I welcome you to t
 <h2>How it works</h2>
 The API supports GET requests for annual fishery landings data at the following url:
 <br /><br />
-<a href="http://openfisheries.org/api/landings/">http://openfisheries.org/api/landings/</a>
+<a href="http://openfisheries.org/api/landings">http://openfisheries.org/api/landings</a>
 <br /><br />
 and produces a valid JSON document. There are parsers for nearly every programming language for reading JSON documents including for the <a href="http://cran.r-project.org/web/packages/RJSONIO/index.html">R-project</a> and <a href="http://docs.python.org/library/json.html">Python</a>.
 <br /><br />
 <h3>API parameters</h3>
 In addition to global aggregate landings, one can download landings by country by adding a <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ISO-3166 alpha 3 country code</a>. For example, to download landings from 1950 to present for Canada:
 <br /><br />
-<a href="http://openfisheries.org/api/landings/?iso3c=CAN">http://openfisheries.org/api/landings/?iso3c=CAN</a>
+<a href="http://openfisheries.org/api/landings?iso3c=CAN">http://openfisheries.org/api/landings?iso3c=CAN</a>
 <br /><br />
 You can also download landings by <a href="http://www.fao.org/fishery/collection/asfis/en">ASFIS species code</a>, FAO statistical area and marine/inland species only. Documentation on these parameters is forthcoming. Until then, feel free to <a href="./contact">contact me</a> for more info about these items.
 
