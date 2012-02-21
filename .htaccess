@@ -1,6 +1,0 @@
-
-# mod_rewrite rule to hide .html extension
-RewriteEngine On
-# RewriteBase /openfisheries.org/
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
