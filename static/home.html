@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>OpenFisheries.org</title>
+<script type="text/javascript" src="./static/js/protovis.min.js"></script>
+<script type="text/javascript" src="./static/js/global_data.js"></script>
+<link rel="stylesheet" type="text/css" href="./static/style.css" />
+<meta name="description" content="A platform for aggregating global fishery data, disseminating this data to researchers through open APIs and pushing the boundaries of fisheries research." /> 
+<meta name="keywords" content="fisheries, economics, opendata, data, open, API, platform" /> 
+<link rel="canonical" href="http://openfisheries.org/" /> 
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+<img src="./static/img/betaLogo.png" id="logo" />
+<ul id="head-menu">
+<li><a href="./">Home</a></li>
+<li><a href="./about">About</a></li>
+<li><a href="./api-info">API</a></li>
+<li><a href="http://blog.openfisheries.org/">Blog</a></li>
+<li><a href="./contact">Contact</a></li>
+</ul>
+</div>
+
+<div id="main">
+<div id="center"><div id="fig">
+<script type="text/javascript+protovis">
+    /* Sizing and scales. */
+    var w = 400,	// width in pixels
+    h = 400,		// height in pixels
+    x = pv.Scale.linear(1949, 2010).range(0, w),	// x-scale
+    y = pv.Scale.linear(0, 100000000).range(0, h); // y-scale
+    
+    /* The root panel. */
+    var vis = new pv.Panel()
+    .width(w)
+    .height(h)
+    .bottom(50)	// bottom padding
+    .left(120)	// left placement on page
+    .right(20)	// right placement on page
+    .top(50);	// top padding
+    
+    /* Y-axis and ticks. */
+    vis.add(pv.Rule)
+    .data(y.ticks())
+    .bottom(y)
+    .strokeStyle(function(d) d ? "#eee" : "#000")
+    .anchor("left").add(pv.Label)
+    .visible(function(d) d > 0 && d <= 100000000)
+    .text(y.tickFormat);
+    
+    /* X-axis and ticks. */
+    vis.add(pv.Rule)
+    .data(x.ticks())
+    .left(x)
+    .strokeStyle(function(d) d ? "#eee" : "#000")
+    .anchor("bottom").add(pv.Label)
+    .visible(function(d) d > 0 && d <= 2010)
+    .text(pv.Format.number(x).group(""));
+	
+    vis.add(pv.Line)
+    .data(data)
+    .interpolate("linear")
+    .left(function(d) x(d.x))
+    .bottom(function(d) y(d.y))
+    .lineWidth(3);
+
+    /* Y-Axis Label */
+    vis.add(pv.Label)
+    .data(["Global fishery landings (tonnes)"])
+    .left(-100)
+    .font("10pt Arial")
+    .bottom(h/2)
+    .textAlign("center")
+    .textAngle(-Math.PI/2);
+
+    /* X-Axis Label */
+    vis.add(pv.Label)
+    .data(["Year"])
+    .left(w/2)
+    .font("10pt Arial")
+    .bottom(-40)
+    .textAlign("center");
+        
+    vis.render();            
+</script>
+</div></div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+<ul>
+<h3>Contact</h3>
+<li><a href="http://www.twitter.com/openfisheries.org">@openfisheries</a></li>
+<li><a href="mailto:openfisheries@gmail.com">openfisheries [at] gmail [dot] com</a></li>
+<li><a href="https://github.com/andrewjdyck/openfisheries.org">Fork on Github</a></li>
+</ul>
+
+
+<!-- Google Analytics code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17319162-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div>
+
+</div>
+
+</body>
+
+</html>
+

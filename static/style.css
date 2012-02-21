@@ -1,0 +1,80 @@
+/*
+Stylesheet for openfisheries.org
+Author: Andrew J. Dyck (http://www.andrewdyck.com)
+Date: August 02, 2011
+*/
+
+#container {
+    width: 600px;
+    margin: 0px auto 0px auto;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: #DDDDDD;
+}
+
+#header {
+    width: 600px;
+    margin-top: 20px;
+}
+
+p.float-right {
+    float: right;
+}
+
+#logo {
+    display: block;
+}
+
+#footer {
+    margin: 0px auto 0px auto;
+    width: 600px;
+    border-top-style: groove;
+    border-top-width: 0.25m;
+    text-align: right;
+}
+
+#head-menu li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+}
+
+#head-menu {
+	margin-top: -60px;
+	text-align: right;
+	text-size: 11pt;
+}
+
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+
+a:link, active, visited {
+    text-decoration: none;
+    color: #646060
+}
+
+ul li {
+    list-style: none;
+}
+
+#center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#fig {
+  position: relative;
+  margin: auto;
+}
+
+#main {
+  display: table;
+  margin: 10px auto 0 auto;
+}
+

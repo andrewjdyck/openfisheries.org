@@ -1,0 +1,10 @@
+# http://wiki.dreamhost.com/index.php/Web.py
+
+<Files code.py>      SetHandler fastcgi-script
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^/?(.*)$ dispatch.fcgi/$1 [L]
+
+
