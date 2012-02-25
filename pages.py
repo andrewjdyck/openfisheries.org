@@ -50,6 +50,7 @@ Openfisheries.org is a community project founded by <a href="http://www.andrewdy
 <li><a href="http://www.twitter.com/openfisheries.org">@openfisheries</a></li>
 <li><a href="mailto:openfisheries@gmail.com">openfisheries [at] gmail [dot] com</a></li>
 <li><a href="https://github.com/andrewjdyck/openfisheries.org">Fork on Github</a></li>
+<li>A project of <a href="http://northernlightsdata.com">Northern Lights Data Lab</a></li>
 </ul>
 
 
@@ -124,6 +125,7 @@ Questions about the project can be directed to us via:
 <li><a href="http://www.twitter.com/openfisheries.org">@openfisheries</a></li>
 <li><a href="mailto:openfisheries@gmail.com">openfisheries [at] gmail [dot] com</a></li>
 <li><a href="https://github.com/andrewjdyck/openfisheries.org">Fork on Github</a></li>
+<li>A project of <a href="http://northernlightsdata.com">Northern Lights Data Lab</a></li>
 </ul>
 
 
@@ -224,6 +226,7 @@ Additional API work will allow downloads by FAO statistical area, marine/inland 
 <li><a href="http://www.twitter.com/openfisheries.org">@openfisheries</a></li>
 <li><a href="mailto:openfisheries@gmail.com">openfisheries [at] gmail [dot] com</a></li>
 <li><a href="https://github.com/andrewjdyck/openfisheries.org">Fork on Github</a></li>
+<li>A project of <a href="http://northernlightsdata.com">Northern Lights Data Lab</a></li>
 </ul>
 
 
@@ -351,6 +354,7 @@ home = '''<html>
 <li><a href="http://www.twitter.com/openfisheries.org">@openfisheries</a></li>
 <li><a href="mailto:openfisheries@gmail.com">openfisheries [at] gmail [dot] com</a></li>
 <li><a href="https://github.com/andrewjdyck/openfisheries.org">Fork on Github</a></li>
+<li>A project of <a href="http://northernlightsdata.com">Northern Lights Data Lab</a></li>
 </ul>
 
 
