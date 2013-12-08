@@ -27,7 +27,7 @@ render = web.template.render('templates/')
 # common functions #
 def result_to_json(query):
     result = ofdb.db.query(query)
-    return json.dumps( [ row for row in result ] )
+    return json.dumps( [ row for row in result ], use_decimal=True )
 
 # the url classes #
 class download:
